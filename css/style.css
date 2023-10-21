@@ -1,0 +1,185 @@
+/* Media Styling */
+@media screen and (max-width: 778px) {
+
+    /* Global Styling  */
+
+    body{
+        color:black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 10px;
+        background-color: #dddddd;
+    }
+    
+    h1{
+        font-size: 270%;
+        font-weight: bolder;
+        text-align: center;
+        animation: 3s slide_in;
+    }
+    
+    @keyframes slide_in{
+        from{
+            margin-left: -100%;
+        }
+    }
+    
+    h2{
+        font-size: 200%;
+        color: black ;
+        text-align: center;
+        font-weight: bold ;
+        padding-top: 5px;
+    }
+    
+    h3{
+        font-size: 200%;
+        color: black;
+        text-align: center;
+        padding-top: 5px;
+    }
+    
+    p{
+        line-height: 120%;
+        
+    }
+    
+    @media (prefers-reduced-motion: reduce){
+        h1{
+            animation: none;
+        }
+    }
+
+    #jump{
+        font-weight: bolder;
+    }
+
+    #skip-to{
+        color: blue;
+    }
+
+    #skip-to>ul>li{
+        list-style: disc;
+        margin-left: 15px;
+        padding-top: 5px;
+    }
+
+
+    nav>ul>li {
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+        font-size: 15px;
+        border-radius: 5px;
+        border: 2px solid black;
+        background-color: white;
+        width: 100px;
+        float: center;
+        
+        }   
+
+    li:hover{
+        color: black;
+    }
+
+    #current{
+        background-color: #666666;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    #HeaderContent{
+        float: right;
+        border-radius: 5px;
+        border: 2px solid black;
+        background-color: white;
+    }
+
+    #skip{
+        display: none;
+    }
+
+    #skip:focus{
+        display: block;
+    }
+
+    hr{
+        border: .5px solid #808080;
+    }
+
+    #HeaderContent{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    p{
+        padding: 10px;
+    }
+
+    #gallery{
+        position: relative;
+        border: 5px solid #ffffff;
+      }
+
+
+    /* Travel Styling */
+
+    .ImageContainer{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .ImageContainer> div> img{
+        border: 5px solid #ffffff;
+    }
+
+      #gallery-italy{
+        position: relative;
+        border: 5px solid #666666;
+      }
+
+      #lastLine{
+        padding-bottom: 30px;
+    }
+
+    figure{
+        text-align: center;
+        font-size: 13px;
+    }
+
+    #textContainer{
+        text-align: center;
+    }
+
+
+    /* Recipe Styling */
+
+    #gallery-chips{
+        position: relative;
+        border: 5px solid #666666;
+    }
+
+    #ingredients>li{
+        padding-top: 5px;
+        margin-left: 25px;
+        list-style: disc;
+    }
+
+    #steps>li{
+        padding-top: 5px;
+        margin-left: 25px;
+        list-style: decimal;
+    }
+
+   /* Pet Styling */
+
+    #likes{
+        padding-top: 5px;
+        margin-left: 25px;
+        list-style: disc;
+    }
+}
+
