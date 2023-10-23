@@ -1,6 +1,3 @@
-/* Media Styling */
-@media screen and (max-width: 778px) {
-
     /* Global Styling  */
 
     body{
@@ -73,7 +70,6 @@
         border: 2px solid black;
         background-color: white;
         width: 100px;
-        float: center;
         
         }   
 
@@ -120,7 +116,7 @@
         padding: 10px;
     }
 
-    #gallery{
+    .gallery{
         position: relative;
         border: 5px solid #ffffff;
       }
@@ -136,12 +132,12 @@
         border: 5px solid #ffffff;
     }
 
-      #gallery-italy{
+    #gallery-italy{
         position: relative;
         border: 5px solid #666666;
-      }
+    }
 
-      #lastLine{
+    .lastLine{
         padding-bottom: 30px;
     }
 
@@ -150,10 +146,25 @@
         font-size: 13px;
     }
 
-    #textContainer{
-        text-align: center;
+    .no_motion{
+        display: none;
     }
 
+    @media (prefers-reduced-motion: reduce) {
+        .motion{
+            display: none;
+        }
+        .no_motion{
+            display: block;
+        }
+    }
+   
+    
+    
+    
+    
+    
+    
 
     /* Recipe Styling */
 
@@ -162,24 +173,29 @@
         border: 5px solid #666666;
     }
 
-    #ingredients>li{
+    .ingredients>li{
         padding-top: 5px;
         margin-left: 25px;
         list-style: disc;
     }
 
-    #steps>li{
+    .steps>li{
         padding-top: 5px;
         margin-left: 25px;
         list-style: decimal;
     }
 
+    .textContainer{
+        text-align: center;
+    }
+
+
    /* Pet Styling */
 
-    #likes{
+    .likes{
         padding-top: 5px;
         margin-left: 25px;
         list-style: disc;
     }
-}
+
 
