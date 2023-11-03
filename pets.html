@@ -26,22 +26,42 @@
     <main>
         <br><br>
         <h1>Pets</h1>
-        <div id="jump">Jump To:</div>
+        <div  class="mobile-skip">
+            <div id="jump">Jump To:</div>
+                <div id="skip-to">
+                    <ul>
+                        <li><a href="#finn">Finn</a></li>
+                        <li><a href="#daisy">Daisy</a></li>
+                        <li><a href="#terry">Terry</a></li>
+                        <li><a href="#bacon">Bacon Q Dog</a></li>
+                        <li><a href="#luna">Luna</a></li>
+                        <li><a href="#bear">Bear</a></li>
+                        <li><a href="#mini">Mini</a></li>
+                     </ul>
+                </div>
+        </div>
+
+        <div class="tablet-skip">
+            <div id="jump">Jump To:</div>
             <div id="skip-to">
-                <ul>
-                    <li><a href="#finn">Finn</a></li>
-                    <li><a href="#daisy">Daisy</a></li>
-                    <li><a href="#terry">Terry</a></li>
-                    <li><a href="#bacon">Bacon Q Dog</a></li>
-                    <li><a href="#luna">Luna</a></li>
-                    <li><a href="#bear">Bear</a></li>
-                    <li><a href="#mini">Mini</a></li>
-                 </ul>
+                <label>
+                    <select onchange="location = this.value;" aria-label="Select a destination">
+                </label>
+                    <option value="#">Select a location</option>
+                    <option value="#finn">Finn</option>
+                    <option value="#daisy">Daisy</option>
+                    <option value="#terry">Terry</option>
+                    <option value="#bacon">Bacon Q Dog</option>
+                    <option value="#luna">Luna</option>
+                    <option value="#bear">Bear</option>
+                    <option value="#mini">Mini</option>
+                </select>
             </div>
+        </div>
         <div id="finn">
             <h2> Finn </h2> 
             <br>
-            <img class="gallery" src ="images/Finn_Halloween.jpg" width="400" alt = "Finn wears a bat costume for halloween"> 
+            <div class="main-image"><img class="gallery" src ="images/Finn_Halloween.jpg" width="400" alt = "Finn wears a bat costume for halloween"> </div>
             
             <p>Finn is a 7 year old grey cat. I feel like no one really knows cat breeds so I’m just gonna go with grey. He loves doing tricks for treats and his favorite is giving high fives to people. He might as well be a dog as he loves the outdoors and meeting new people. I can only describe him as goofy and chaotic. </p>
             <p>Finn’s biggest enemy is his vet. I don't know whether or not it’s because his vet is an MSU alum, but he doesn’t like him. He actually has to be prescribed a sedative before he goes to the vet office because he’ll suddenly act like he was never a house cat for 7 years.</p> 
@@ -72,7 +92,7 @@
             <br> 
             <h2>Daisy</h2>
             <br> 
-            <img class="gallery" src="images/daisy_defeats_snake.jpg" width="400" alt="Daisy is an 8 year old black and white Morkie (Maltese-Yorkie)">
+            <div class="main-image"><img class="gallery" src="images/daisy_defeats_snake.jpg" width="400" alt="Daisy is an 8 year old black and white Morkie (Maltese-Yorkie)"></div>
             <p>When Daisy isn’t busy slaying all of the evil snakes trying to attack us (Pictured Above), you can usually find her annoying her older sister Marina, getting super hyper at completely random times, or relaxing in our backyard making sure she keeps out all of the intruders (squirrels)</p>
             <p>One of Daisy’s favorite things to do is beg to go on a walk, and then once we’re about half way done with the walk she likes to lay down and refuse to keep going. She then loves being carried all the way back from said walk, and the process will repeat again later in the day.</p>
             <h3>Photo Gallery</h3>
@@ -102,8 +122,10 @@
             <br> 
             <h2>Terry</h2>
             <br> 
-            <img class="gallery" src="images/terry_sitting.jpg" width="400" 
-            alt="Black dachshund wearing leash and sitting">
+            <div class="main-image">
+                <img class="gallery" src="images/terry_sitting.jpg" width="400"
+                alt="Black dachshund wearing leash and sitting">
+            </div>
             <p>Terry is a playful and spirited dachshund that loves to play fetch with his bone or tennis ball. He loves wandering in forests and finding large sticks to take home. His favorite foods are kibble and peanut butter. Terry will run around frantically when it’s time to eat at home.</p>
             <p>My family found Terry at a shelter and decided to adopt it. He was 4 months old and is now 8 years old. Terry knows how to swim, but we don’t tend to go often. Terry got poison ivy once; however, he quickly recovered and has been doing great since</p>
             <h3>Photo Gallery</h3>
@@ -134,7 +156,7 @@
             <br> 
             <h2>Bacon Q Dog</h2>
             <br> 
-            <img  class="gallery" src="images/bacon.jpg" width = "400" alt="Brown labradoodle wearing colorful lei">
+            <div class="main-image"><img  class="gallery" src="images/bacon.jpg" width = "400" alt="Brown labradoodle wearing colorful lei"></div>
 
             <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him. He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.</p> 
             <P>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy. He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride." There is also a lot of rolling. Lots and lots of rolling.</P>
@@ -166,11 +188,13 @@
             <br> 
             <h2>Luna</h2>
             <br> 
-            <img class="gallery"
-                src="images/luna.PNG"
-                alt="Mini German shepherd sunbathing"
-                width="400"
-            >
+            <div class="main-image">
+                <img class="gallery"
+                    src="images/luna.PNG"
+                    alt="Mini German shepherd sunbathing"
+                    width="400"
+                >
+            </div>
             <p>
                 Luna is a German shepherd mix and a fireball of energy. Often times, destroying anything in her path she will take and hide all your socks, shoes, and clothes for her to chew on. She loves playing catch at the park, it always gives her the zoomies.
             </p>
@@ -219,7 +243,7 @@
             <br> 
             <h2>Bear</h2>
             <br> 
-            <img class="gallery" src="images/bear_squish.JPG" width="400" alt="bear smirking">
+            <div class="main-image"><img class="gallery" src="images/bear_squish.JPG" width="400" alt="bear smirking"></div>
 
             <p> 
                 Bear, the sun-loving canine, is a true beach bum at heart. When the warm rays of the sun grace the sandy shores, you can always find Bear sprawled out, basking in the golden glow. His eyes squint with contentment as he soaks up the sun's warmth, his fluffy coat glistening in the sunlight. Bear's love for sunbathing is unmatched, and he'll stay put until his fur is toasty warm.
@@ -252,12 +276,14 @@
         <div id="mini">
             <h2>Mini</h2>
             <br> 
-            <img class="gallery"
-                src="images/miniPosing.JPG"
-                alt="Beautiful Yorkshire ready to strike"
-                width="400"
-                height="400"
-            >
+            <div class="main-image">
+                <img class="gallery"
+                    src="images/miniPosing.JPG"
+                    alt="Beautiful Yorkshire ready to strike"
+                    width="400"
+                    height="400"
+                >
+            </div>
             <p> 
                 Mini is a 10 year old yorkshire terrier who’s grown up along with me. She enjoys playing and taking baths and is the sweetest dog you could ask for. My mom brought her from a shelter in Ecuador when she was just a couple of months old and even though it was over ten years ago, I remember that day like it was yesterday.
             </p>

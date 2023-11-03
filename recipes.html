@@ -26,14 +26,31 @@
     <main>
         <br><br>
         <h1>Recipes</h1>
-        <div id="jump">Jump To:</div>
+        <div  class="mobile-skip">
+            <div id="jump">Jump To:</div>
+                <div id="skip-to">
+                    <ul>
+                        <li><a href="#cookie">Double Chocolate Cookies</a></li>
+                        <li><a href="#crunchwrap">Crunchwrap Supreme</a></li>
+                        <li><a href="#scampi">Shrimp Scampi</a></li>
+                     </ul>
+                </div>
+        </div>
+
+        <div class="tablet-skip">
+            <div id="jump">Jump To:</div>
             <div id="skip-to">
-                <ul>
-                    <li><a href="#cookie">Double Chocolate Cookies</a></li>
-                    <li><a href="#crunchwrap">Crunchwrap Supreme</a></li>
-                    <li><a href="#scampi">Shrimp Scampi</a></li>
-                 </ul>
+                <label>
+                    <select onchange="location = this.value;" aria-label="Select a destination">
+                </label>
+                    <option value="#">Select a location</option>
+                    <option value="#cookie">Double Chocolate Cookies</option>
+                    <option value="#crunchwrap">Crunchwrap Supreme</option>
+                    <option value="#scampi">Shrimp Scampi</option>
+                </select>
             </div>
+        </div>
+        
         <br>
         <div id="cookie">
             <h2>Double Chocolate Cookies</h2>
@@ -43,7 +60,7 @@
                 <div><span>Category: Dessert</span></div>
             </div>
             <br>
-            <img class="gallery" src="images/double_chocolate_cookies.png" width = "400" alt="">
+            <div class="main-image"><img class="gallery" src="images/double_chocolate_cookies.png" width = "400" alt=""></div>
             <br>
             <p>My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe to fit the taste buds of her siblings.  They are extremely sugary so the salt helps to balance it.  Note, these cookies are best eaten very quickly.</p>
             <h3>Recipe Ingredients</h3>
@@ -94,7 +111,7 @@
                 <div><span>Category: Comfort Dish</span></div>
             </div>
             <br>
-            <img class="gallery" src="images/Crunchwrap_Supreme.png" width = "400" alt="">
+            <div class="main-image"><img class="gallery" src="images/Crunchwrap_Supreme.png" width = "400" alt=""></div>
             <p>
                 MA plain cheese quesadilla of the white tortilla + prebagged cheese + microwave-until-melted variety can be made a bit of a joke when describing someone’s ability to “cook,” but this juicy chicken quesadilla is well-above basic.
             </p>
@@ -144,7 +161,7 @@
                 <div><span>Category: Main Dish</span></div>
             </div>
             <br>
-            <img class="gallery" src="images/shrimp_scampi.jpg" width = "400" alt="">
+            <div class="main-image"><img class="gallery" src="images/shrimp_scampi.jpg" width = "400" alt=""></div>
             <p>
                 Shrimp scampi is a classic Italian-American delight, where succulent shrimp meet a medley of garlic, butter, and white wine. Sautéed to pink perfection, the shrimp mingle with a fragrant blend of garlic and red pepper flakes. A drizzle of white wine and a squeeze of lemon create a luxurious sauce, embracing the dish's linguine base. With a sprinkle of parsley, it's a harmonious, flavorful masterpiece that exemplifies both simplicity and taste.
             </p>

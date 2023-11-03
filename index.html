@@ -29,24 +29,42 @@
         <br><br>
         <h1>Travel</h1>
             <br>
-            <div id="jump">Jump To:</div>
-            <div id="skip-to">
-                <ul>
-                    <li><a href="#zion">Zion National Park</a></li>
-                    <li><a href="#jungfrau">Jungfrau Switzerland</a></li>
-                    <li><a href="#rome">Rome, Italy</a></li>
-                    <li><a href="#yellowstone">Yellowstone</a></li>
-                 </ul>
+            <div class="mobile-skip">
+                <div id="jump">Jump To:</div>
+                <div id="skip-to">
+                    <ul>
+                        <li><a href="#zion">Zion National Park</a></li>
+                        <li><a href="#jungfrau">Jungfrau, Switzerland</a></li>
+                        <li><a href="#rome">Rome, Italy</a></li>
+                        <li><a href="#yellowstone">Yellowstone</a></li>
+                     </ul>
+                </div>
             </div>
+
+            <div class="tablet-skip">
+                <div id="jump">Jump To:</div>
+                <div id="skip-to">
+                    <label>
+                        <select onchange="location = this.value;" aria-label="Select a destination">
+                    </label>
+                        <option value="#">Select a location</option>
+                        <option value="#zion">Zion National Park</option>
+                        <option value="#jungfrau">Jungfrau, Switzerland</option>
+                        <option value="#rome">Rome, Italy</option>
+                        <option value="#yellowstone">Yellowstone</option>
+                    </select>
+                </div>
+            </div>
+
         <br>
         <div id="zion">
             <h2>Zion National Park</h2>
             <br>
             <div class="ImageContainer">
-                <div>
+                <div class="imageLeft">
                     <img src="images/Zion_River.jpg" width="200" height="116" alt="Zion River">
                 </div>&nbsp;&nbsp;
-                <div>
+                <div class="imageRight">
                     <img class= "motion" src="images/Zion_Park.gif" width="200" height="116" alt="Zion River Moving">
                     <img class= "no_motion" src="images/zion_alt.jpg" width="200" height="116" alt="Zion River">
                 </div>
@@ -57,33 +75,78 @@
             <p>Found in southwestern Utah, Zion National Park spreads over 229 square miles. The park is known for its sandstone cliffs, deep canyons, and vast mesas, giving it a unique beauty that everyone should try to experience . Along with this Zion offers a wide variety of Flora and Fauna that differs each season making it a hot destination all year round.</p>
             <p>Having over 112 trails available to hike, walk, and even camp at, people from all over the world are traveling to Zion to see just how amazing it truly is. With trails that range from riverside walks all the way to hikes that have you scaling long bluffs to reach a peak, Zion has something that every outdoorsman can enjoy. However it is not all sunshines and rainbows, and there are dangers that come with these trails that all hikers should read and learn about before their expedition.</p>
             <br>
-            <h3>Photo Gallery</h3>
-            <br>
-            <div>
-                <figure>
-                    <img class='gallery' src="images/Zion_Angels_Landing.jpg" alt="Angels Landing hike from afar" width="500">
-                    <figcaption>One of the most popular (and dangerous) hikes Zion has to offer </figcaption>
-                </figure>
+            <!-- Photo Gallery View for Phone -->
+            <div class="photo-gallery-phone">
+                <h3>Photo Gallery</h3>
                 <br>
-                <figure>
-                    <img class='gallery' src="images/pg-zion2.jpeg" alt="Deep canyon in the summer" width="500">
-                    <figcaption>A typical day in Zion</figcaption>
-                </figure>
+                <div>
+                    <figure>
+                        <img class='gallery' src="images/Zion_Angels_Landing.jpg" alt="Angels Landing hike from afar" width="500">
+                        <figcaption>One of the most popular (and dangerous) hikes Zion has to offer </figcaption>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img class='gallery' src="images/pg-zion2.jpeg" alt="Deep canyon in the summer" width="500">
+                        <figcaption>A typical day in Zion</figcaption>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img class='gallery' src="images/Zion_River_Tunnel.jpg" alt="Water tunnel" width="500">
+                        <figcaption>Thousands of years of erosion have created beautiful water tunnels such as this one</figcaption>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img class='gallery' src="images/Zion_River_Walk.jpg" alt="River Walk" width="500">
+                        <figcaption>A popular river hike that everyone loves on a hot summer day </figcaption>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img class='gallery' src="images/Zion_Winter.jpg" alt="Zion in the Winter" width="500">
+                        <figcaption class="lastLine">Zion in the winter offers different but just as amazing views</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            
+            <!-- Photo gallery Code for Tablet View -->
+            <div class="photo-gallery-tablet">
+                <h3>Photo Gallery</h3>
                 <br>
-                <figure>
-                    <img class='gallery' src="images/Zion_River_Tunnel.jpg" alt="Water tunnel" width="500">
-                    <figcaption>Thousands of years of erosion have created beautiful water tunnels such as this one</figcaption>
-                </figure>
-                <br>
-                <figure>
-                    <img class='gallery' src="images/Zion_River_Walk.jpg" alt="River Walk" width="500">
-                    <figcaption>A popular river hike that everyone loves on a hot summer day </figcaption>
-                </figure>
-                <br>
-                <figure>
-                    <img class='gallery' src="images/Zion_Winter.jpg" alt="Zion in the Winter" width="500">
-                    <figcaption class="lastLine">Zion in the winter offers different but just as amazing views</figcaption>
-                </figure>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/pg-zion2.jpeg" alt="Deep Zion canyon in the summer"
+                        style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="images/Zion_Angels_Landing.jpg" alt="One of the most popular (and dangerous) hikes Zion has to offer "
+                        style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="images/Zion_River_Tunnel.jpg" alt="Thousands of years of erosion have created beautiful water tunnels such as this one"
+                        style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="images/Zion_River_Walk.jpg" alt="A popular river hike that everyone loves on a hot summer day"
+                        style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="images/Zion_Winter.jpg" alt="Zion in the Winter"
+                        style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <br>
+
+
+                </div>
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext"></div>
+                </div>
             </div>
             <!-- Brady Haisfield -->
         </div>
@@ -94,10 +157,10 @@
             <h2>Jungfrau Switzerland</h2>
             <br>
             <div class="ImageContainer">
-                <div>
+                <div class="imageLeft">
                     <img src=images/jungfrau-summit.jpeg alt="Helicoper in Jungfrau.">
                 </div>&nbsp;&nbsp;
-                <div>
+                <div class="imageRight">
                     <img class= "motion" src=images/jungfrau-helicopter.gif height="132" alt="Top of jungfrau">
                     <img class= "no_motion" src=images/junfrau_alt.jpeg height="132" alt="Jungfrau village">
                 </div>
@@ -107,32 +170,73 @@
             <p>Jungfrau is a city in Switzerland known for its mountain summits nicknamed the “top of Europe.” It is very famous also for its railway created in 1912 that can bring you to a height of 3454m. At the summit there are outstanding views where you can see the whole city and beyond.</p>
             <p>The scenery consists of valleys, waterfalls, rock walls, and snow peaks. When visiting, it is vital to go on a day with good weather because it enhances the quality of the views. Hiking is very popular at short trails called Grutschalp and Murren. A very common tourist attraction is also exploring the Lauterbrunnen valley.</p>
             <br>
-            <h3>Photo Gallery</h3>
-            <br>
-            <figure>
-                <img class='gallery' src=images/jungfrau_summit_building.jpg width = "500" alt="Tourists can take the train and elevator up to that building on summit">
-                <figcaption>Jungfrau building summit</figcaption>
-            </figure>
-            <br>
-            <figure>
-                <img class='gallery' src=images/jungfrau_train.jpg width = "500" alt="Train on railway that takes you to the top of the summit">
-                <figcaption>Jungfrau train</figcaption>
-            </figure>
-            <br>
-            <figure>
-                <img class='gallery' src=images/jungfrau_lodging.jpg width = "500" alt="Houses located in Jungfrau for people to stay at">
-                <figcaption>Lodging in Jungfrau</figcaption>
-            </figure>
-            <br>
-            <figure>
-                <img class='gallery' src=images/jungfrau_water.jpg width = "500" alt="Body of water located in Jungfrau fun for swimming">
-                <figcaption>Lake in Jungfrau</figcaption>
-            </figure>
-            <br>
-            <figure>
-                <img class='gallery' src=images/jungfrau_lookout.jpg width = "500" alt="Tourists can go to the spot to look out over the country">
-                <figcaption class="lastLine">Lookout point at Jungfrau</figcaption>
-            </figure>
+            <div class="photo-gallery-phone">
+                <h3>Photo Gallery</h3>
+                <br>
+                <figure>
+                    <img class='gallery' src=images/jungfrau_summit_building.jpg width = "500" alt="Tourists can take the train and elevator up to that building on summit">
+                    <figcaption>Jungfrau building summit</figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <img class='gallery' src=images/jungfrau_train.jpg width = "500" alt="Train on railway that takes you to the top of the summit">
+                    <figcaption>Jungfrau train</figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <img class='gallery' src=images/jungfrau_lodging.jpg width = "500" alt="Houses located in Jungfrau for people to stay at">
+                    <figcaption>Lodging in Jungfrau</figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <img class='gallery' src=images/jungfrau_water.jpg width = "500" alt="Body of water located in Jungfrau fun for swimming">
+                    <figcaption>Lake in Jungfrau</figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <img class='gallery' src=images/jungfrau_lookout.jpg width = "500" alt="Tourists can go to the spot to look out over the country">
+                    <figcaption class="lastLine">Lookout point at Jungfrau</figcaption>
+                </figure>
+            </div>
+
+
+            <div class="photo-gallery-tablet">
+                <h3>Photo Gallery</h3>
+                <br>
+                <div class="row">
+                    <div class="column">
+                        <img src= images/jungfrau_summit_building.jpg alt= "Tourists can take the train and elevator up to that building on summit"
+                        style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src= images/jungfrau_train.jpg alt="Train on railway that takes you to the top of the summit"
+                        style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src=images/jungfrau_lodging.jpg alt="Houses located in Jungfrau for people to stay at"
+                        style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src=images/jungfrau_water.jpg alt="Body of water located in Jungfrau fun for swimming"
+                        style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src=images/jungfrau_lookout.jpg alt="Tourists can go to the spot to look out over the country"
+                        style="width:100%" onclick="myFunction(this);">
+                    </div>
+                    <br>
+                </div>
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg-2" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext"></div>
+                </div>
+            </div>
     
             <!-- Daniel Saltzman -->
         </div>
@@ -141,10 +245,10 @@
             <h2>Rome, Italy</h2>
             <br>
             <div class="ImageContainer">
-                <div>
+                <div class="imageLeft">
                     <img src = "images/rome_picture.jpeg" width = "400" alt = "Rome along the Tiber River.">
                 </div>&nbsp;&nbsp;
-                <div>
+                <div class="imageRight">
                     <img class= "motion" src = "images/rome_gif.gif" width = "400" alt = "The Streets of Rome">
                     <img class= "no_motion" src = "images/rome_alt.jpeg" width = "400" alt = "The Streets of Rome">
                 </div>
@@ -191,10 +295,10 @@
             <h2>Yellowstone</h2>
             <br>
             <div class="ImageContainer">
-                <div>
+                <div class="imageLeft">
                     <img src="images/yellowstone_cauldron.jpg" width="400" alt="Bubbling cauldron.">
                 </div>&nbsp;&nbsp;
-                <div>
+                <div class="imageRight">
                     <img class= "motion" src="images/yellowstone_cauldron.gif" width = "400" alt="Bubbling cauldron">
                     <img class= "no_motion" src="images/yellowstone_alt.jpg" width = "400" height="238" alt="Yellowstone Entrance">
                 </div>
@@ -217,18 +321,15 @@
             </figure>
             <br>
             <figure>
-                <video class='gallery' width="0"  controls>
+                <video class='gallery' width="370"  controls>
                     <source src="images/yellowstone_prism.MOV">
-                    Your browser does not support the video tag.
                 </video>
                 <figcaption>The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
             </figure>
             <br>
-
             <figure>
                 <video class='gallery' width="370"  controls>
                     <source src="images/yellowstone_buffalo.MOV">
-                    Your browser does not support the video tag.
                 </video>
                 <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</figcaption>
             </figure>
@@ -238,12 +339,13 @@
                 
                 <figcaption class="lastLine">If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
             </figure>
+            <br>
+            <br>
+            <br>
             <!-- Colleen van Lent -->
         </div>
-
-        
-        <div></div>
     </main>
+    <script src="jscript.js"></script>
 </body>
 </html>
 
