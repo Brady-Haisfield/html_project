@@ -1,8 +1,8 @@
-function myFunction(imgs) {
+function zionFunction(imgs) {
     // Get the expanded image
-    var expandImg = document.getElementById("expandedImg");
+    var expandImg = document.getElementById("expandedImg-zion");
     // Get the image text
-    var imgText = document.getElementById("imgtext");
+    var imgText = document.getElementById("imgtext-zion");
     // Use the same src in the expanded image as the image being clicked on from the grid
     expandImg.src = imgs.src;
     // Use the value of the alt attribute of the clickable image as text inside the expanded image
@@ -10,6 +10,79 @@ function myFunction(imgs) {
     // Show the container element (hidden with CSS)
     expandImg.parentElement.style.display = "block";
   }
+
+
+  function junfrauFunction(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg-jun");
+    // Get the image text
+    var imgText = document.getElementById("imgtext-jun");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+  }
+
+
+  function romeFunction(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg-rome");
+    // Get the image text
+    var imgText = document.getElementById("imgtext-rome");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+  }
+
+  // function ysFunction(imgs) {
+  //   // Get the expanded image
+  //   var expandImg = document.getElementById("expandedImg-ys");
+  //   // Get the image text
+  //   var imgText = document.getElementById("imgtext-ys");
+  //   // Use the same src in the expanded image as the image being clicked on from the grid
+  //   expandImg.src = imgs.src;
+  //   // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  //   imgText.innerHTML = imgs.alt;
+  //   // Show the container element (hidden with CSS)
+  //   expandImg.parentElement.style.display = "block";
+  // }
+
+
+  function ysFunction(media) {
+    // Get the expanded image and video elements
+    var expandImg = document.getElementById("expandedImg-ys");
+    var expandVideo = document.getElementById("expandedVideo-ys");
+    // Get the image text
+    var imgText = document.getElementById("imgtext-ys");
+
+    // Check if the clicked element is an image or a video
+    if (media.tagName === 'IMG') {
+        // Image logic
+        expandImg.style.display = "block";
+        expandVideo.style.display = "none";
+        expandImg.src = media.src;
+        imgText.innerHTML = media.alt;
+    } else if (media.tagName === 'VIDEO') {
+        // Video logic
+        expandImg.style.display = "none";
+        expandVideo.style.display = "block";
+        expandVideo.src = media.children[0].src; // assuming <source> is a direct child
+        imgText.innerHTML = media.children[0].getAttribute('alt'); // assuming alt attribute is set on the source tag
+        expandVideo.load(); // to load the new video source
+        expandVideo.play(); // play video
+    }
+    // Show the container element (hidden with CSS)
+    imgText.parentElement.style.display = "block";
+}
+        // You can also set the video's source to an expanded video element similar to the image if needed
+        // For simplicity, here we just control play/pause
+
+
 
 
 

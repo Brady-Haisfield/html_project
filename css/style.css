@@ -344,7 +344,36 @@
           }
           
             /* Expanding image text */
-          #imgtext {
+          #imgtext-zion {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 20px;
+          }
+
+          #imgtext-jun {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 20px;
+          }
+
+
+          #imgtext-rome {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 20px;
+          }
+
+
+          #imgtext-{
             position: absolute;
             bottom: 15px;
             left: 15px;

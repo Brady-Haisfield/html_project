@@ -115,23 +115,23 @@
                 <div class="row">
                     <div class="column">
                         <img src="images/pg-zion2.jpeg" alt="Deep Zion canyon in the summer"
-                        style="width:100%" onclick="myFunction(this);">
+                        style="width:100%" onclick="zionFunction(this);">
                     </div>
                     <div class="column">
                         <img src="images/Zion_Angels_Landing.jpg" alt="One of the most popular (and dangerous) hikes Zion has to offer "
-                        style="width:100%" onclick="myFunction(this);">
+                        style="width:100%" onclick="zionFunction(this);">
                     </div>
                     <div class="column">
                         <img src="images/Zion_River_Tunnel.jpg" alt="Thousands of years of erosion have created beautiful water tunnels such as this one"
-                        style="width:100%" onclick="myFunction(this);">
+                        style="width:100%" onclick="zionFunction(this);">
                     </div>
                     <div class="column">
                         <img src="images/Zion_River_Walk.jpg" alt="A popular river hike that everyone loves on a hot summer day"
-                        style="width:100%" onclick="myFunction(this);">
+                        style="width:100%" onclick="zionFunction(this);">
                     </div>
                     <div class="column">
                         <img src="images/Zion_Winter.jpg" alt="Zion in the Winter"
-                        style="width:100%" onclick="myFunction(this);">
+                        style="width:100%" onclick="zionFunction(this);">
                     </div>
                     <br>
 
@@ -142,10 +142,10 @@
                     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
                 
                     <!-- Expanded image -->
-                    <img id="expandedImg" style="width:100%">
+                    <img id="expandedImg-zion" style="width:100%">
                 
                     <!-- Image text -->
-                    <div id="imgtext"></div>
+                    <div id="imgtext-zion"></div>
                 </div>
             </div>
             <!-- Brady Haisfield -->
@@ -206,23 +206,23 @@
                 <div class="row">
                     <div class="column">
                         <img src= images/jungfrau_summit_building.jpg alt= "Tourists can take the train and elevator up to that building on summit"
-                        style="width:100%" onclick="myFunction(this);">
+                        style="width:100%" onclick="junfrauFunction(this);">
                     </div>
                     <div class="column">
                         <img src= images/jungfrau_train.jpg alt="Train on railway that takes you to the top of the summit"
-                        style="width:100%" onclick="myFunction(this);">
+                        style="width:100%" onclick="junfrauFunction(this);">
                     </div>
                     <div class="column">
                         <img src=images/jungfrau_lodging.jpg alt="Houses located in Jungfrau for people to stay at"
-                        style="width:100%" onclick="myFunction(this);">
+                        style="width:100%" onclick="junfrauFunction(this);">
                     </div>
                     <div class="column">
                         <img src=images/jungfrau_water.jpg alt="Body of water located in Jungfrau fun for swimming"
-                        style="width:100%" onclick="myFunction(this);">
+                        style="width:100%" onclick="junfrauFunction(this);">
                     </div>
                     <div class="column">
                         <img src=images/jungfrau_lookout.jpg alt="Tourists can go to the spot to look out over the country"
-                        style="width:100%" onclick="myFunction(this);">
+                        style="width:100%" onclick="junfrauFunction(this);">
                     </div>
                     <br>
                 </div>
@@ -231,10 +231,10 @@
                     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
                 
                     <!-- Expanded image -->
-                    <img id="expandedImg-2" style="width:100%">
+                    <img id="expandedImg-jun" style="width:100%">
                 
                     <!-- Image text -->
-                    <div id="imgtext"></div>
+                    <div id="imgtext-jun"></div>
                 </div>
             </div>
     
@@ -260,32 +260,73 @@
             <p>The Via del Corso, named after Roman carnival horse races, is the main street that runs through Rome. Many significant churches, palaces, and squares run along this road (Piazza del Popolo, and the Spanish Steps in Piazza di Spagna, for example). The seven hills that surround Rome are trenched with mythological history which can be seen through the prevalence of temples. Must see landmarks for those traveling include the Colosseum, Roman Forum, Pantheon, and Catacombs. St. Peter’s Square & Basilica and the Sistine Chapel, technically located within Vatican City – an independent city-state within Rome – are also worth a visit.
             </p>
             <br>
-            <h3>Photo Gallery</h3>
-            <br>
-            <figure>
-                <img id='gallery-italy' src = "images/rome_map.jpeg" width = "500" alt = "Simple depiction of the location of Rome within Italy.">
-                <figcaption>Rome is located in the western-central region of Italy, about 15 miles inland from the neighboring Tyrrhenian Sea.</figcaption>
-            </figure>
-            <br>
-            <figure>
-                <img class='gallery' src = "images/rome_map_2.jpeg" width = "500" alt = "Map portraying important attractions and landmarks as well as the layout of the city.">
-                <figcaption>Nested within the Tiber river, the seven hills of Rome both give rise to another nickname and mark the ancient boundaries of the city. </figcaption>
-            </figure>
-            <br>
-            <figure>
-                <img class='gallery' src = "images/rome_colosseum.jpeg" width = "500" alt = "Roman Colosseum at sundown">
-                <figcaption>Built in 80 AD, the Colosseum was built as an amphitheater for entertainment, and hosted gladiatorial combat and animal fights for over 400 years.</figcaption>
-            </figure>
-            <br>
-            <figure>
-                <img class='gallery' src = "images/rome_catacombs.jpeg" width = "500" alt = "Arched, partially lit underground tunnels comprise the Catacombs of Rome.">
-                <figcaption>Because of ancient Roman law dictating the deceased not to be buried within the city, the labyrinthian tunnels of the Catacombs of Rome stretch for over 12 miles outside city limits. </figcaption>
-            </figure>
-            <br>
-            <figure>
-                <img class='gallery' src = "images/rome_pantheon.jpeg" width = "500" alt = "Painting of the interior of the Pantheon.">
-                <figcaption class="lastLine">The largest domed temple built in its time, the interior of the Pantheon is illuminated by natural light flowing through a circular oculus and features colored marble and vast columns. </figcaption>
-            </figure>
+            <div class="photo-gallery-phone">
+                <h3>Photo Gallery</h3>
+                <br>
+                <figure>
+                    <img id='gallery-italy' src = "images/rome_map.jpeg" width = "500" alt = "Simple depiction of the location of Rome within Italy.">
+                    <figcaption>Rome is located in the western-central region of Italy, about 15 miles inland from the neighboring Tyrrhenian Sea.</figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <img class='gallery' src = "images/rome_map_2.jpeg" width = "500" alt = "Map portraying important attractions and landmarks as well as the layout of the city.">
+                    <figcaption>Nested within the Tiber river, the seven hills of Rome both give rise to another nickname and mark the ancient boundaries of the city. </figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <img class='gallery' src = "images/rome_colosseum.jpeg" width = "500" alt = "Roman Colosseum at sundown">
+                    <figcaption>Built in 80 AD, the Colosseum was built as an amphitheater for entertainment, and hosted gladiatorial combat and animal fights for over 400 years.</figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <img class='gallery' src = "images/rome_catacombs.jpeg" width = "500" alt = "Arched, partially lit underground tunnels comprise the Catacombs of Rome.">
+                    <figcaption>Because of ancient Roman law dictating the deceased not to be buried within the city, the labyrinthian tunnels of the Catacombs of Rome stretch for over 12 miles outside city limits. </figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <img class='gallery' src = "images/rome_pantheon.jpeg" width = "500" alt = "Painting of the interior of the Pantheon.">
+                    <figcaption class="lastLine">The largest domed temple built in its time, the interior of the Pantheon is illuminated by natural light flowing through a circular oculus and features colored marble and vast columns. </figcaption>
+                </figure>
+            </div>
+
+
+            <div class="photo-gallery-tablet">
+                <h3>Photo Gallery</h3>
+                <br>
+                <div class="row">
+                    <div class="column">
+                        <img src= "images/rome_map.jpeg" alt=  "Simple depiction of the location of Rome within Italy."
+                        style="width:100%" onclick="romeFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src= "images/rome_map_2.jpeg" alt= "Map portraying important attractions and landmarks as well as the layout of the city."
+                        style="width:100%" onclick="romeFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="images/rome_colosseum.jpeg" alt="Roman Colosseum at sundown"
+                        style="width:100%" onclick="romeFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="images/rome_catacombs.jpeg" alt= "Arched, partially lit underground tunnels comprise the Catacombs of Rome."
+                        style="width:100%" onclick="romeFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="images/rome_pantheon.jpeg" alt="Painting of the interior of the Pantheon."
+                        style="width:100%" onclick="romeFunction(this);">
+                    </div>
+                    <br>
+                </div>
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg-rome" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext-rome"></div>
+                </div>
+            </div>
             
             <!-- Iris Ding --> 
         </div>
@@ -308,37 +349,92 @@
             <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and provides an opportunity to see wildlife and explore geothermal areas.  In fact, Yellowstone contains about half the world's active geysers.</p>
             <p>These unique opportunities also bring out a lot of bad decisions among the tourists.  Every year visitors injure themselves or the wildlife by getting close to the animals.  You  can see examples of people making bad decisions by visiting <a href ="https://www.facebook.com/groups/yellowstonenationalparkinvasionoftheidiots/">Yellowstone National Park: Invasion of the Idiots</a>, <a href="https://www.instagram.com/touronsofyellowstone/?hl=en">Tourons of Yellowstone</a>, or  <a href="https://cowboystatedaily.com/">Cowboy State Daily</a>.</p>
             <br>
-            <h3>Photo Gallery</h3>
-            <br>
-            <figure>
-                <img class='gallery' src="images/yellowstone_travertine.JPG" width = "500" alt="A large mound of multi-colored travertine">
-                <figcaption>Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
-            </figure>
-            <br>
-            <figure>
-                <img class='gallery' src="images/yellowstone_sunset.jpg" width = "500" alt="Sunset over mountains with some charred trees in the foreground">
-                <figcaption>The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views.</figcaption>
-            </figure>
-            <br>
-            <figure>
-                <video class='gallery' width="370"  controls>
-                    <source src="images/yellowstone_prism.MOV">
-                </video>
-                <figcaption>The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
-            </figure>
-            <br>
-            <figure>
-                <video class='gallery' width="370"  controls>
-                    <source src="images/yellowstone_buffalo.MOV">
-                </video>
-                <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</figcaption>
-            </figure>
-            <br>
-            <figure>
-                <img class='gallery' src="images/yellowstone_sulphur_springs.JPG" width = "500" alt="A large spring with clouds of sulfur smoke rising from it.">
+            <div class="photo-gallery-phone">
+                <h3>Photo Gallery</h3>
+                <br>
+                <figure>
+                    <img class='gallery' src="images/yellowstone_travertine.JPG" width = "500" alt="A large mound of multi-colored travertine">
+                    <figcaption>Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <img class='gallery' src="images/yellowstone_sunset.jpg" width = "500" alt="Sunset over mountains with some charred trees in the foreground">
+                    <figcaption>The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views.</figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <video class='gallery' width="370"  controls>
+                        <source src="images/yellowstone_prism.MOV">
+                    </video>
+                    <figcaption>The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <video class='gallery' width="370"  controls>
+                        <source src="images/yellowstone_buffalo.MOV">
+                    </video>
+                    <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</figcaption>
+                </figure>
+                <br>
+                <figure>
+                    <img class='gallery' src="images/yellowstone_sulphur_springs.JPG" width = "500" alt="A large spring with clouds of sulfur smoke rising from it.">
                 
-                <figcaption class="lastLine">If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
-            </figure>
+                    <figcaption class="lastLine">If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
+                </figure>
+            </div>
+
+            <div class="photo-gallery-tablet">
+                <h3>Photo Gallery</h3>
+                <br>
+                <div class="row">
+                    <div class="column">
+                        <img src= "images/yellowstone_travertine.JPG" alt=  "Simple depiction of the location of Rome within Italy."
+                        style="width:100%" onclick="ysFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src= "images/yellowstone_sunset.jpg" alt= "Map portraying important attractions and landmarks as well as the layout of the city."
+                        style="width:100%" onclick="ysFunction(this);">
+                    </div>
+                    <div class="column">
+                        <video style="width:100%" controls onclick="ysFunction(this);">
+                            <source src="images/yellowstone_prism.MOV" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <div class="column">
+                        <video style="width:100%" controls onclick="ysFunction(this);">
+                            <source src="images/yellowstone_buffalo.MOV" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="column">
+                        <img src="images/yellowstone_sulphur_springs.JPG" alt="Painting of the interior of the Pantheon."
+                        style="width:100%" onclick="ysFunction(this);">
+                    </div>
+                    <br>
+                </div>
+
+
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg-ys" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext-ys"></div>
+
+                    <video id="expandedVideo-ys" style="width:100%; display:none;" controls>
+                        <!-- The video source can be set dynamically with JavaScript -->
+                    </video>
+
+                </div>
+            </div>
+
+
+
+
             <br>
             <br>
             <br>
