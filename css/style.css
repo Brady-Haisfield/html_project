@@ -109,10 +109,6 @@
         display: none;
     }
 
-    #skip:focus{
-        display: block;
-    }
-
     hr{
         border: .5px solid #808080;
     }
@@ -216,6 +212,22 @@
 
 
     @media (min-width:768px){
+        /* General Styling for tablet view */
+        .main-image{
+            margin-left: 23%;
+        }
+
+        .video-font{
+            font-size: 20px;
+        }
+
+        h3{
+            font-weight: bolder;
+        }
+
+        #skip{
+            display: block
+        }
 
         /* Disable showing the phone type photo gallery */
         .photo-gallery-phone{
@@ -256,14 +268,17 @@
             }
     
         p { font-size: 15px;}
-    
+
+        /* Make the images next to eachother */
         .imageLeft> img {
             width: 500px;
-            height: 290px;}
+            height: 290px;
+            margin-left: 20px;}
 
         .imageRight> img {
             width: 500px;
-            height: 290px;}
+            height: 290px;
+            margin-left: 20px;}
 
         .mobile-skip{
             display: none;
@@ -319,14 +334,73 @@
             height: 80px;
             padding: 10px;
           }
-          
-            /* Style the images inside the grid */
+        
           .column img {
             opacity: 0.8;
             cursor: pointer;
           }
           
           .column img:hover {
+            opacity: 1;
+          }
+
+         /* Style the images inside the grid when there is 3 photos */
+          .column-3images {
+            float: left;
+            width: 20%;
+            height: 100px;
+            padding: 10px;
+            margin-left: 77px;
+          }
+          
+          .column-3images img {
+            opacity: 0.8;
+            cursor: pointer;
+          }
+
+          .column-3images img:hover {
+            opacity: 1;
+          }
+
+          
+          
+
+         /* Style the images inside the grid for pets page*/
+          .column-pets {
+            float: left;
+            width: 20%;
+            height: 100px;
+            padding: 10px;
+            margin-left: 35px;
+          }
+
+          .column-pets img {
+            opacity: 0.8;
+            cursor: pointer;
+          }
+          
+          .column-pets img:hover {
+            opacity: 1;
+          }
+
+          
+
+
+          /* Styling for recipe photo gallery */
+          .column-recipe {
+            float: left;
+            width: 20%;
+            height: 100px;
+            padding: 10px;
+            margin-left: 77px;
+          }
+
+          .column-recipe img {
+            opacity: 0.8;
+            cursor: pointer;
+          }
+    
+          .column-recipe img:hover {
             opacity: 1;
           }
           
@@ -341,9 +415,10 @@
           .container{
             position: relative;
             display: none;
+            margin-left:25px ;
           }
           
-            /* Expanding image text */
+          /* Styling for the text when the images pops up */
           #imgtext-zion {
             position: absolute;
             bottom: 15px;
@@ -373,7 +448,97 @@
           }
 
 
-          #imgtext-{
+          #imgtext-ys{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 20px;
+          }
+
+          #imgtext-cookie{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 20px;
+          }
+
+          #imgtext-tb{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 20px;
+          }
+
+          #imgtext-scampi{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 20px;
+          }
+
+          #imgtext-finn{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 20px;
+          }
+
+          #imgtext-daisy{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 20px;
+          }
+
+          #imgtext-terry{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 20px;
+          }
+
+          #imgtext-bacon{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 20px;
+          }
+
+          #imgtext-luna{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 20px;
+          }
+
+          #imgtext-bear{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 20px;
+          }
+
+          #imgtext-mini{
             position: absolute;
             bottom: 15px;
             left: 15px;
@@ -382,6 +547,16 @@
             font-size: 20px;
           }
           
+          /* Close button for recipe photos */
+          .closebtn-recipe {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 35px;
+            cursor: pointer;
+          }
             /* Closable button inside the image */
           .closebtn {
             position: absolute;
@@ -392,8 +567,15 @@
             cursor: pointer;
           }
 
-        .main-image{
-            margin-left: 23%;
-        }
+        /* Close button for recipe photos */
+        .closebtn-recipe {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            background-color: grey;
+            font-size: 35px;
+            cursor: pointer;
+          }
 
     }

@@ -8,7 +8,7 @@
     <title>Pets</title>
 </head>
 <body>
-    <a id= "skip" href="">Skip to Main Content</a>
+    <a id= "skip" href="#finn">Skip to Main Content</a>
     <header>
         <div id="HeaderContent">
             <img src="images/personal_logo.jpg" alt="Logo" width="200" height="100">
@@ -65,17 +65,63 @@
             
             <p>Finn is a 7 year old grey cat. I feel like no one really knows cat breeds so I’m just gonna go with grey. He loves doing tricks for treats and his favorite is giving high fives to people. He might as well be a dog as he loves the outdoors and meeting new people. I can only describe him as goofy and chaotic. </p>
             <p>Finn’s biggest enemy is his vet. I don't know whether or not it’s because his vet is an MSU alum, but he doesn’t like him. He actually has to be prescribed a sedative before he goes to the vet office because he’ll suddenly act like he was never a house cat for 7 years.</p> 
-            <h3>Photo Gallery </h3>
+            <div class="photo-gallery-phone">
+                <h3>Photo Gallery </h3>
+                <br>
+                <img class="gallery" src="images/Finn_Shlumped.jpg" width = "500" alt = "Finn is exhausted after a long day of doing absolutely nothing">
+                <br> <br>
+                <img class="gallery" src="images/Finn_Kitten.jpg" width = "500" alt = "A few days after we adopted Finn. He’s just posing for the camera">
+                <br> <br>
+                <video class="gallery" width = "370" controls>
+                    <source src="images/Finn_jumpscare.mov">
+                </video>
+                <br> <br>
+                <img class="gallery" src="images/Finn_GOAT.jpg" width = "500" alt = "Finn dressed up as the king he is for Halloween ">
+            </div>
+
+
+            <div class="photo-gallery-tablet">
+                <h3>Photo Gallery</h3>
+                <br>
+                <div class="row">
+                    <div class="column-3images">
+                        <img class="gallery" src="images/Finn_Shlumped.jpg" alt = "Finn is exhausted after a long day of doing absolutely nothing"
+                        style="width:100%" onclick="finnFunction(this);">
+                    </div>
+                    <div class="column-3images">
+                        <img class="gallery" src="images/Finn_Kitten.jpg" alt = "A few days after we adopted Finn. He’s just posing for the camera"
+                        style="width:100%" onclick="finnFunction(this);">
+                    </div>
+                    <div class="column-3images">
+                        <img class="gallery" src="images/Finn_GOAT.jpg" alt = "Finn dressed up as the king he is for Halloween "
+                        style="width:100%" onclick="finnFunction(this);">
+                    </div>
+                    <br>
+                </div>
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg-finn" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext-finn"></div>
+                </div>
+            </div>
             <br>
-            <img class="gallery" src="images/Finn_Shlumped.jpg" width = "500" alt = "Finn is exhausted after a long day of doing absolutely nothing">
-            <br> <br>
-            <img class="gallery" src="images/Finn_Kitten.jpg" width = "500" alt = "A few days after we adopted Finn. He’s just posing for the camera">
-            <br> <br>
-            <video class="gallery" width = "370" controls> 
-                <source src="images/Finn_jumpscare.mov">
-            </video>
-            <br> <br>
-            <img class="gallery" src="images/Finn_GOAT.jpg" width = "500" alt = "Finn dressed up as the king he is for Halloween ">
+            <h3>Video Gallery</h3>
+                <br>
+                <figure>
+                    <video class="gallery" width = "370" controls>
+                        <source src="images/Finn_jumpscare.mov">
+                    </video>
+                </figure>
+                </div>
+
+
+
+
             <br> <br> 
             <h3>Likes</h3>
             <ul class="likes">
@@ -95,15 +141,53 @@
             <div class="main-image"><img class="gallery" src="images/daisy_defeats_snake.jpg" width="400" alt="Daisy is an 8 year old black and white Morkie (Maltese-Yorkie)"></div>
             <p>When Daisy isn’t busy slaying all of the evil snakes trying to attack us (Pictured Above), you can usually find her annoying her older sister Marina, getting super hyper at completely random times, or relaxing in our backyard making sure she keeps out all of the intruders (squirrels)</p>
             <p>One of Daisy’s favorite things to do is beg to go on a walk, and then once we’re about half way done with the walk she likes to lay down and refuse to keep going. She then loves being carried all the way back from said walk, and the process will repeat again later in the day.</p>
-            <h3>Photo Gallery</h3>
-            <br> 
-            <img class="gallery" src = "images/daisy_closeup.jpg" width = "500" alt="Very close up image of daisy">
-            <br> <br>
-            <img class="gallery" src = "images/daisy_tired.jpg" width = "500" alt="Daisy is slumped after a long day of walks">
-            <br> <br>
-            <img class="gallery" src = "images/daisy_festive.jpg" width = "500" alt="Daisy in her halloween costume with her sister Marina">
-            <br> <br>
-            <img class="gallery" src = "images/daisy_disposable_camera.jpg" width = "500" alt="Picture I took of daisy with one of my disposable cameras">
+            <div class="photo-gallery-phone">
+                <h3>Photo Gallery</h3>
+                <br>
+                <img class="gallery" src = "images/daisy_closeup.jpg" width = "500" alt="Very close up image of daisy">
+                <br> <br>
+                <img class="gallery" src = "images/daisy_tired.jpg" width = "500" alt="Daisy is slumped after a long day of walks">
+                <br> <br>
+                <img class="gallery" src = "images/daisy_festive.jpg" width = "500" alt="Daisy in her halloween costume with her sister Marina">
+                <br> <br>
+                <img class="gallery" src = "images/daisy_disposable_camera.jpg" width = "500" alt="Picture I took of daisy with one of my disposable cameras">
+            </div>
+
+            <div class="photo-gallery-tablet">
+                <h3>Photo Gallery</h3>
+                <br>
+                <div class="row">
+                    <div class="column-pets">
+                        <img class="gallery" src = "images/daisy_closeup.jpg" alt="Very close up image of daisy"
+                        style="width:100%" onclick="daisyFunction(this);">
+                    </div>
+                    <div class="column-pets">
+                        <img class="gallery" src = "images/daisy_tired.jpg" alt="Daisy is slumped after a long day of walks"
+                        style="width:100%" onclick="daisyFunction(this);">
+                    </div>
+                    <div class="column-pets">
+                        <img class="gallery" src = "images/daisy_festive.jpg" alt="Daisy in her halloween costume with her sister Marina"
+                        style="width:100%" onclick="daisyFunction(this);">
+                    </div>
+
+                    <div class="column-pets">
+                        <img class="gallery" src = "images/daisy_disposable_camera.jpg" alt="Picture I took of daisy with one of my disposable cameras"
+                        style="width:100%" onclick="daisyFunction(this);">
+                    </div>
+                    <br>
+                </div>
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg-daisy" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext-daisy"></div>
+                </div>
+            </div>
+
             <br> <br>
             <h3>Likes</h3>
             <ul class = "likes">
@@ -128,18 +212,58 @@
             </div>
             <p>Terry is a playful and spirited dachshund that loves to play fetch with his bone or tennis ball. He loves wandering in forests and finding large sticks to take home. His favorite foods are kibble and peanut butter. Terry will run around frantically when it’s time to eat at home.</p>
             <p>My family found Terry at a shelter and decided to adopt it. He was 4 months old and is now 8 years old. Terry knows how to swim, but we don’t tend to go often. Terry got poison ivy once; however, he quickly recovered and has been doing great since</p>
-            <h3>Photo Gallery</h3>
-            <br> 
-            <img class="gallery" src="images/terry_beach.jpg" width="500" alt="Black dachshund wearing sunglasses at a beach.">
-            <br> <br> 
-            <img class="gallery" src="images/terry_stick.jpg" width="500" 
-            alt="Black dachshund holding stick at lake on rocks">
-            <br> <br> 
-            <img class="gallery" src="images/terry_minion.jpg" width="500" 
-            alt="Black dachshund wearing a Minion costume.">
-            <br> <br> 
-            <img class="gallery" src="images/terry_reed.jpg" width="500" 
-            alt="Black dachshund holding a reed on street.">
+            <div class="photo-gallery-phone">
+                <h3>Photo Gallery</h3>
+                <br>
+                <img class="gallery" src="images/terry_beach.jpg" width="500" alt="Black dachshund wearing sunglasses at a beach.">
+                <br> <br>
+                <img class="gallery" src="images/terry_stick.jpg" width="500"
+                alt="Black dachshund holding stick at lake on rocks">
+                <br> <br>
+                <img class="gallery" src="images/terry_minion.jpg" width="500"
+                alt="Black dachshund wearing a Minion costume.">
+                <br> <br>
+                <img class="gallery" src="images/terry_reed.jpg" width="500"
+                alt="Black dachshund holding a reed on street.">
+            </div>
+
+            <div class="photo-gallery-tablet">
+                <h3>Photo Gallery</h3>
+                <br>
+                <div class="row">
+                    <div class="column-pets">
+                        <img class="gallery" src="images/terry_beach.jpg"  alt="Black dachshund wearing sunglasses at a beach."
+                        style="width:100%" onclick="terryFunction(this);">
+                    </div>
+                    <div class="column-pets">
+                        <img class="gallery" src="images/terry_stick.jpg" alt="Black dachshund holding stick at lake on rocks"
+                        style="width:100%" onclick="terryFunction(this);">
+                    </div>
+                    <div class="column-pets">
+                        <img class="gallery"src="images/terry_minion.jpg" alt="Black dachshund wearing a Minion costume."
+                        style="width:100%" onclick="terryFunction(this);">
+                    </div>
+
+                    <div class="column-pets">
+                        <img class="gallery" src="images/terry_reed.jpg" alt="Black dachshund holding a reed on street."
+                        style="width:100%" onclick="terryFunction(this);">
+                    </div>
+                    <br>
+                </div>
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg-terry" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext-terry"></div>
+                </div>
+            </div>
+
+
+            
             <br> <br> 
             <h3>Likes</h3>
             <ul class="likes">
@@ -160,18 +284,61 @@
 
             <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him. He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.</p> 
             <P>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy. He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride." There is also a lot of rolling. Lots and lots of rolling.</P>
-            <h3>Photo Gallery</h3>
-            <br> 
-            <img class="gallery" src="images/bacon_bandana.JPG" width ="500" alt = "Brown labradoodle wearing an orange bandana">
-            <br> <br> 
-            <img class="gallery" src="images/bacon_graduation.JPG"  width ="500" alt="Small labradoodle puppy wearing a graduation cap and gown">
-            <br> <br> 
-            <video class="gallery" width="370"  controls>
-                <source src="images/bacon_agility.mov">
-                Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
-            </video>
-            <br> <br> 
-            <img class="gallery" src="images/bacon_halloween.JPG"  width ="500" alt="Brown labradoodle wearing a pirate costume">
+            <div class="photo-gallery-phone">
+                <h3>Photo Gallery</h3>
+                <br>
+                <img class="gallery" src="images/bacon_bandana.JPG" width ="500" alt = "Brown labradoodle wearing an orange bandana">
+                <br> <br>
+                <img class="gallery" src="images/bacon_graduation.JPG"  width ="500" alt="Small labradoodle puppy wearing a graduation cap and gown">
+                <br> <br>
+                <video class="gallery" width="370"  controls>
+                    <source src="images/bacon_agility.mov">
+                    Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
+                </video>
+                <br> <br> 
+                <img class="gallery" src="images/bacon_halloween.JPG"  width ="500" alt="Brown labradoodle wearing a pirate costume">
+            </div>
+
+            <div class="photo-gallery-tablet">
+                <h3>Photo Gallery</h3>
+                <br>
+                <div class="row">
+                    <div class="column-3images">
+                        <img class="gallery" src="images/bacon_bandana.JPG" alt = "Brown labradoodle wearing an orange bandana"
+                        style="width:100%" onclick="baconFunction(this);">
+                    </div>
+                    <div class="column-3images">
+                        <img class="gallery" src="images/bacon_graduation.JPG" alt="Small labradoodle puppy wearing a graduation cap and gown"
+                        style="width:100%" onclick="baconFunction(this);">
+                    </div>
+                    <div class="column-3images">
+                        <img class="gallery" src="images/bacon_halloween.JPG" alt="Brown labradoodle wearing a pirate costume"
+                        style="width:100%" onclick="baconFunction(this);">
+                    </div>
+                    <br>
+                </div>
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg-bacon" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext-bacon"></div>
+                </div>
+            </div>
+            <br>
+            <h3>Video Gallery</h3>
+                <br>
+                <figure>
+                    <video class="gallery" width="370"  controls>
+                        <source src="images/bacon_agility.mov">
+                    </video>
+                </figure>
+                </div>
+
+
             <br> <br> 
             <h3>Likes</h3>
             <ul class="likes">
@@ -201,31 +368,71 @@
             <p>
                 Luna is a very jealous, loving, and protective dog. She really embraces her inner chihuahua and will bark at any stranger, car, or noise at night. She makes the perfect guard dog. But she is not at all aggressive. Luna is all bark no bite!
             </p>
-            <h3>Photo Gallery</h3>
-            <br> 
-            <img class="gallery"
-                src="images/luna_puppy.PNG"
-                alt="Luna as a puppy"
-                width="500"
-            >
-            <br> <br> 
-            <img class="gallery"
-                src="images/luna_napping.PNG"
-                alt="Luna’s afternoon nap"
-                width="500"
-            >
-            <br> <br> 
-            <img class="gallery"
-                src="images/luna_friends.PNG"
-                alt="Luna, Lobi, Laith"
-                width="500"
-            >
-            <br> <br> 
-             <img class="gallery"
-                src="images/luna_evil.PNG"
-                alt="Luna death stare"
-                width="500"
-            >
+            <div class="photo-gallery-phone">
+                <h3>Photo Gallery</h3>
+                <br>
+                <img class="gallery"
+                    src="images/luna_puppy.PNG"
+                    alt="Luna as a puppy"
+                    width="500"
+                >
+                <br> <br>
+                <img class="gallery"
+                    src="images/luna_napping.PNG"
+                    alt="Luna’s afternoon nap"
+                    width="500"
+                >
+                <br> <br>
+                <img class="gallery"
+                    src="images/luna_friends.PNG"
+                    alt="Luna, Lobi, Laith"
+                    width="500"
+                >
+                <br> <br>
+                 <img class="gallery"
+                    src="images/luna_evil.PNG"
+                    alt="Luna death stare"
+                    width="500"
+                >
+            </div>
+
+
+            <div class="photo-gallery-tablet">
+                <h3>Photo Gallery</h3>
+                <br>
+                <div class="row">
+                    <div class="column-pets">
+                        <img class="gallery" src="images/luna_puppy.PNG" alt="Luna as a puppy"
+                        style="width:100%" onclick="lunaFunction(this);">
+                    </div>
+                    <div class="column-pets">
+                        <img class="gallery" src="images/luna_napping.PNG" alt="Luna’s afternoon nap"
+                        style="width:100%" onclick="lunaFunction(this);">
+                    </div>
+                    <div class="column-pets">
+                        <img class="gallery" src="images/luna_friends.PNG" alt="Luna, Lobi, Laith"
+                        style="width:100%" onclick="lunaFunction(this);">
+                    </div>
+
+                    <div class="column-pets">
+                        <img class="gallery" src="images/luna_evil.PNG" alt="Luna death stare"
+                        style="width:100%" onclick="lunaFunction(this);">
+                    </div>
+                    <br>
+                </div>
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg-luna" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext-luna"></div>
+                </div>
+            </div>
+
+
             <br> <br> 
 
             <h3>Likes</h3>
@@ -251,15 +458,54 @@
             <p>
                 However, there's one thing Bear despises more than a cold, rainy day–leashes. The moment his owner attempts to clip on that restraining contraption, Bear's ears droop, and his tail tucks between his legs. He's got a knack for escaping from them, making it a constant struggle for his human to keep him under control during walks. With a mischievous glint in his eyes and a sly smirk, Bear prefers the freedom of the great outdoors, unburdened by a leash.
             </p>
-            <h3>Photo Gallery</h3>
-            <br> 
-            <img class="gallery" src="images/bear.JPG" width="500" alt="happy bear">
-            <br> <br> 
-            <img class="gallery" src="images/bear_sunbathing.jpeg" width="500" alt="bear sunbathing">
-            <br> <br> 
-            <img class="gallery" src="images/bear_leash.jpeg" width="500" alt="bear back">
-            <br> <br> 
-            <img class="gallery" src="images/bear_lazy.JPG" width="500" alt="bear on leash">
+            <div class="photo-gallery-phone">
+                <h3>Photo Gallery</h3>
+                <br>
+                <img class="gallery" src="images/bear.JPG" width="500" alt="happy bear">
+                <br> <br>
+                <img class="gallery" src="images/bear_sunbathing.jpeg" width="500" alt="bear sunbathing">
+                <br> <br>
+                <img class="gallery" src="images/bear_leash.jpeg" width="500" alt="bear back">
+                <br> <br>
+                <img class="gallery" src="images/bear_lazy.JPG" width="500" alt="bear on leash">
+            </div>
+
+            <div class="photo-gallery-tablet">
+                <h3>Photo Gallery</h3>
+                <br>
+                <div class="row">
+                    <div class="column-pets">
+                        <img class="gallery" src="images/bear.JPG" width="500" alt="happy bear"
+                        style="width:100%" onclick="bearFunction(this);">
+                    </div>
+                    <div class="column-pets">
+                        <img class="gallery" src="images/bear_sunbathing.jpeg" alt="bear sunbathing"
+                        style="width:100%" onclick="bearFunction(this);">
+                    </div>
+                    <div class="column-pets">
+                        <img class="gallery" src="images/bear_leash.jpeg" alt="bear back"
+                        style="width:100%" onclick="bearFunction(this);">
+                    </div>
+
+                    <div class="column-pets">
+                        <img class="gallery" src="images/bear_lazy.JPG" alt="bear on leash"
+                        style="width:100%" onclick="bearFunction(this);">
+                    </div>
+                    <br>
+                </div>
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg-bear" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext-bear"></div>
+                </div>
+            </div>
+
+
             <br> <br> 
 
             <h3>Likes</h3>
@@ -290,35 +536,71 @@
             <p> 
                 Mini’s quite small, even smaller than the average yorki so she’s quite sensitive physically speaking. However, she still tries to protect our home when she hears a stranger at the door despite her size. Mini loves her family and has a big heart!
             </p>
-            <h3>Photo Gallery</h3>
-            <br> 
-            
-            <img class="gallery"
-                src="images/mini.jpg" 
-                alt="Mini riding in a car"
-                width="500"
-            >
-            <br> <br> 
+            <div class="photo-gallery-phone">
+                <h3>Photo Gallery</h3>
+                <br>
+                
+                <img class="gallery"
+                    src="images/mini.jpg"
+                    alt="Mini riding in a car"
+                    width="500"
+                >
+                <br> <br>
+                <img class="gallery"
+                    src="images/mini1.jpg"
+                    alt="Mini being spoiled in a car"
+                    width="500"
+                >
+                <br> <br>
+                <img class="gallery"
+                    src="images/mini2.jpg"
+                    alt="Mini waking up from a nap"
+                    width="500"
+                >
+                <br> <br>
+                
+                <img class="gallery"
+                    src="images/mini3.jpg"
+                    alt="Mini waking up from a nap again"
+                    width="500"
+                >
+            </div>
 
-            <img class="gallery"
-                src="images/mini1.jpg"
-                alt="Mini being spoiled in a car"
-                width="500"
-            >
-            <br> <br> 
 
-            <img class="gallery"
-                src="images/mini2.jpg"
-                alt="Mini waking up from a nap"
-                width="500"
-            >
-            <br> <br> 
-            
-            <img class="gallery"
-                src="images/mini3.jpg"
-                alt="Mini waking up from a nap again"
-                width="500"
-            >
+            <div class="photo-gallery-tablet">
+                <h3>Photo Gallery</h3>
+                <br>
+                <div class="row">
+                    <div class="column-pets">
+                        <img class="gallery" src="images/mini.jpg" alt="Mini riding in a car"
+                        style="width:100%" onclick="miniFunction(this);">
+                    </div>
+                    <div class="column-pets">
+                        <img class="gallery" src="images/mini1.jpg" alt="Mini being spoiled in a car"
+                        style="width:100%" onclick="miniFunction(this);">
+                    </div>
+                    <div class="column-pets">
+                        <img class="gallery" src="images/mini2.jpg" alt="Mini waking up from a nap"
+                        style="width:100%" onclick="miniFunction(this);">
+                    </div>
+
+                    <div class="column-pets">
+                        <img class="gallery" src="images/mini3.jpg" alt="Mini waking up from a nap again"
+                        style="width:100%" onclick="miniFunction(this);">
+                    </div>
+                    <br>
+                </div>
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg-mini" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext-mini"></div>
+                </div>
+            </div>
             <br> <br> 
 
             <h3>Likes</h3>
@@ -330,5 +612,6 @@
             <!--Alessandro Lorenzo-->
         </div>
     </main>
+    <script src="jscript.js"></script>
 </body>
 </html>
