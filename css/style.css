@@ -643,6 +643,11 @@
           width: 110px;
           margin-left: 45.5%;
       }
+
+      header{
+        background-image: url('../images/nav_background.avif');
+      }
+     
   
       nav>ul>li {
           margin-top: 15px;
